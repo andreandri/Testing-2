@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#333333">
+  <title>Restaurant App</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="/images/icon-192x192.png">
+</head>
+<body>
+
+  <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+    <div class="spinner"></div>
+  </div>
+  
+  <header>
+    <a href="#main-content" class="skip-to-content">Skip to Content</a>
+    <nav id="app-bar" class="app-bar">
+      <div class="brand-logo" tabindex="0">MyRestaurant</div>
+      <button id="hamburger" aria-label="Open navigation menu">☰</button>
+      <ul id="navigation-menu" class="nav-list">
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/favorite">Favorite</a></li>
+        <li><a href="https://www.linkedin.com/in/andre-andrianus02/?originalSubdomain=id" target="_blank">About Us</a></li>
+      </ul>      
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="0">
+    <!-- Konten akan di-render di sini berdasarkan URL -->
+  </main>
+
+  <footer>
+    <p tabindex="0">Copyright © 2024 - MyRestaurant</p>
+  </footer>
+
+  <script src="index.js" type="module"></script>
+</body>
+</html>
